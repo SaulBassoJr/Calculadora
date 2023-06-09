@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- lang Define o idioma pro leitor de telas -->
+    <head>
+        <meta charset="UTF-8"> <!-- Suporte a caracteres -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="background">
+            <h1>Saul Basso Junior</h1>
+            <div class="calculator">
+                <h1>Calculadora</h1>
+                <p id="result">
+                    
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="button-calc" onclick="clearCalc()">C</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="backSpace()"><</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('/')">/</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('*')">x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('7')">7</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('8')">8</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('9')">9</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('-')">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('4')">4</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('5')">5</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('6')">6</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('+')">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('1')">1</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('2')">2</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('3')">3</button>
+                        </td>
+                        <td rowspan="2">
+                            <button class="button-calc -equal" onclick="calculate()">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="button-calc -zero" onclick="insertButon('0')">0</button>
+                        </td>
+                        <td>
+                            <button class="button-calc" onclick="insertButon('.')">.</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+
+
+</html>
